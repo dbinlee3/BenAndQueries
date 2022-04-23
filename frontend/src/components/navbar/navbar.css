@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    padding: 15px;
 }
 
 .navbarLogo {
@@ -12,6 +13,7 @@
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
+    width: 275px;
 }
 
 .nav-menu {
@@ -112,7 +114,7 @@
         display: block;
         text-align: center;
         padding: 1.5rem;
-        margin: 2rem auto;
+        margin: 0.5rem auto;
         border-radius: 4px;
         width: 80%;
         background: #222222;
@@ -129,5 +131,18 @@
 
     Button {
         display: none;
+    }
+
+    .gitLogo{
+        width: 63px;
+        height: 17px;
+        /* padding: 10px;
+        margin-bottom: 17px; */
+    }
+    
+    .linkedLogo{
+        width: 98px;
+        height: 31px;
+        /* padding: 20px; */
     }
 }

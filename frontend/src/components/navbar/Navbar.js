@@ -4,7 +4,7 @@ import './navbar.css'
 
 import { Button } from '../button/Button.js'
 import githubLogo from '../../assets/githublogo.png'
-import linkedLogo from '../../assets/linkedinlogo.png'
+import linkedinLogo from '../../assets/linkedinlogo.png'
 
 class Navbar extends Component {
 
@@ -36,9 +36,12 @@ class Navbar extends Component {
 
                         
                     </ul>
-
-                    <Button>Github</Button>
+                    <Button>GitHub</Button>
                     <Button>LinkedIn</Button>
+                    
+                    
+                    {/* <img className="gitLogo" src={githubLogo} alt="" />
+                    <img className="linkedLogo" src={linkedinLogo} alt="" /> */}
 
 
 
