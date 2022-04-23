@@ -3,6 +3,8 @@ import { MenuItems } from './MenuItems.js'
 import './navbar.css'
 
 import { Button } from '../button/Button.js'
+import githubLogo from '../../assets/githublogo.png'
+import linkedLogo from '../../assets/linkedinlogo.png'
 
 class Navbar extends Component {
 
@@ -35,7 +37,8 @@ class Navbar extends Component {
                         
                     </ul>
 
-                    <Button>Sign Up</Button>
+                    <Button>Github</Button>
+                    <Button>LinkedIn</Button>
 
 
 
