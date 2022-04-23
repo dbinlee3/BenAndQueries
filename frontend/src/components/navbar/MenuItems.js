@@ -1,28 +1,28 @@
 export const MenuItems = [
     {
         title: 'ABOUT ME',
-        url: '#',
+        url: '/about',
         cName: 'nav-links'
     },
     {
         title: 'PROJECTS',
-        url: '#',
+        url: '/projects',
         cName: 'nav-links'
     },
     {
         title: 'RESUME',
-        url: '#',
+        url: '/resume',
         cName: 'nav-links'
     },
     {
         title: 'GitHub',
-        url: '#',
+        url: 'https://github.com/dbinlee3',
         cName: 'nav-links-mobile'
     },
 
     {
         title: 'LinkedIn',
-        url: '#',
+        url: 'https://www.linkedin.com/in/dong-bin-lee-065666235/',
         cName: 'nav-links-mobile'
     },
 

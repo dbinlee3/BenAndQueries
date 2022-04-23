@@ -19,7 +19,7 @@ class Navbar extends Component {
         return(
             <>
                 <nav className="navbarItems">
-                    <h1 className="navbarLogo">ben {"&"} queries.</h1>
+                    <a className="navbarLogo" href="/">ben {"&"} queries.</a>
                     <div className="menu-icon" onClick={this.handleClick}>
                         <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                     </div>
