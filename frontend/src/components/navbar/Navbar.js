@@ -1,30 +1,54 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { MenuItems } from './MenuItems.js'
 import './navbar.css'
 
-import linkedlogo from '../../assets/linkedinlogo.png'
-import githublogo from '../../assets/githublogo.png'
+import { Button } from '../button/Button.js'
+import githubLogo from '../../assets/githublogo.png'
+import linkedinLogo from '../../assets/linkedinlogo.png'
 
-function Navbar() {
-    return (
-        <div className="navWrapper">
-            <div className="navLeft">
-                ben {"&"} queries.
-            </div>
+class Navbar extends Component {
 
-            <div className="navCenter">
-                <span>ABOUT ME</span>
-                <span>PROJECTS</span>
-                <span>RESUME</span>
-            </div>
-            
-            <div className="navRight">
-                <img className="githubLogo" src={githublogo} alt="" />
-                <img className="linkedLogo" src={linkedlogo} alt="" />
+    state = { clicked: false }
 
-            </div>
+    //Sets state to true/false, for icon click change
+    handleClick = () => {
+        this.setState({ clicked: !this.state.clicked})
+    }
 
-        </div>
-    )
+    render() {
+        return(
+            <>
+                <nav className="navbarItems">
+                    <h1 className="navbarLogo">ben {"&"} queries.</h1>
+                    <div className="menu-icon" onClick={this.handleClick}>
+                        <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+                    </div>
+                    <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
+                        {MenuItems.map( (item, index) => {
+                            return (
+                                <li key={index}>
+                                    <a className={item.cName} href={item.url}>
+                                        {item.title}
+                                    </a>
+                                </li>
+                            )
+                        })}
+
+                        
+                    </ul>
+                    <Button>GitHub</Button>
+                    <Button>LinkedIn</Button>
+                    
+                    
+                    {/* <img className="gitLogo" src={githubLogo} alt="" />
+                    <img className="linkedLogo" src={linkedinLogo} alt="" /> */}
+
+
+
+                </nav>
+            </>
+        )
+    }
 }
 
 export default Navbar
