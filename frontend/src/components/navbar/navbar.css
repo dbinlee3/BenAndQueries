@@ -1,0 +1,12 @@
+.navWrapper {
+    background: black;
+    width: 100%;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navLogo {
+    
+}
