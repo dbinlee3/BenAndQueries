@@ -61,6 +61,10 @@
     display: none;
 }
 
+.navButtons {
+    display: inline-block;
+}
+
 @media screen and (max-width: 960px) {
     .NavbarItems {
         position: relative;
@@ -133,8 +137,13 @@
         color: #6568F4;
         transition: 250ms;
     }
-
+/* 
     Button {
+        display: none;
+    } */
+
+
+    .navButtons {
         display: none;
     }
 
