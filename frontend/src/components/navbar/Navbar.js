@@ -36,9 +36,13 @@ class Navbar extends Component {
 
                         
                     </ul>
-                    <Button>GitHub</Button>
-                    <Button>LinkedIn</Button>
-                    
+                    <span className="navButtons">
+                        <Button className="navButtons">GitHub</Button>
+                    </span>
+
+                    <span className="navButtons">
+                        <Button classNAme="navButtons">LinkedIn</Button>
+                    </span>
                     
                     {/* <img className="gitLogo" src={githubLogo} alt="" />
                     <img className="linkedLogo" src={linkedinLogo} alt="" /> */}
