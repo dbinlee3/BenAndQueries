@@ -63,6 +63,7 @@
 
 .navButtons {
     display: inline-block;
+    padding: 5px;
 }
 
 @media screen and (max-width: 960px) {
@@ -137,16 +138,10 @@
         color: #6568F4;
         transition: 250ms;
     }
-/* 
-    Button {
-        display: none;
-    } */
-
 
     .navButtons {
         display: none;
     }
-
 }
 
 .gitLogo{
