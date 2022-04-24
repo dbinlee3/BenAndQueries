@@ -44,8 +44,7 @@ class Navbar extends Component {
                         <Button classNAme="navButtons">LinkedIn</Button>
                     </span>
                     
-                    {/* <img className="gitLogo" src={githubLogo} alt="" />
-                    <img className="linkedLogo" src={linkedinLogo} alt="" /> */}
+
 
 
 
