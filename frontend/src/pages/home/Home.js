@@ -1,6 +1,7 @@
 import React from 'react'
 import './home.css'
-import { Button } from '../../components/button/Button.js'
+import { Link } from 'react-router-dom';
+
 
 // import Typewriter from 'react-simple-typewriter'
 // import '../../react-simple-typewriter/dist/index.css'
@@ -20,8 +21,13 @@ function Home() {
                 <h1>greetings.</h1>
                 <p>welcome to ben {"&"} queries.</p>
 
-                <button className="getStartedButton" type="button">GET STARTED</button>
+                <Link to="/about">
+                    <button className="getStartedButton" type="button">
+                        GET STARTED
+                    </button>
+                </Link>
 
+                {/* <Button>GET STARTED</Button> */}
 
             </div>
         </>
