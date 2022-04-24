@@ -1,5 +1,6 @@
 import React from 'react'
 import './home.css'
+import { Button } from '../../components/button/Button.js'
 
 // import Typewriter from 'react-simple-typewriter'
 // import '../../react-simple-typewriter/dist/index.css'
@@ -13,24 +14,15 @@ function Home() {
     return (
         <>
             <div className="homeContainer">
+
                 <video src={video1} autoPlay loop muted />
-                {/* <div className="content">
-                    <div className="homeWrapper">
-                        <div className="homeTop">
 
-                            <h2 className="firstLine">Greetings</h2>
-                        </div>
+                <h1>greetings.</h1>
+                <p>welcome to ben {"&"} queries.</p>
 
-                        <div className="homeMid">
+                <button className="getStartedButton" type="button">GET STARTED</button>
 
-                        </div>
 
-                        <div className="getStarted">
-                        
-                        </div>
-
-                    </div>
-                </div> */}
             </div>
         </>
     )
