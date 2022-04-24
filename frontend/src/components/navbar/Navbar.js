@@ -3,8 +3,7 @@ import { MenuItems } from './MenuItems.js'
 import './navbar.css'
 
 import { Button } from '../button/Button.js'
-import githubLogo from '../../assets/githublogo.png'
-import linkedinLogo from '../../assets/linkedinlogo.png'
+import { Link } from 'react-router-dom';
 
 class Navbar extends Component {
 
@@ -19,35 +18,63 @@ class Navbar extends Component {
         return(
             <>
                 <nav className="navbarItems">
-                    <a className="navbarLogo" href="/">ben {"&"} queries.</a>
+                    <a className="navbarLogo" href=".">ben {"&"} queries.</a>
                     <div className="menu-icon" onClick={this.handleClick}>
                         <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                     </div>
                     <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                         {MenuItems.map( (item, index) => {
-                            return (
-                                <li key={index}>
-                                    <a className={item.cName} href={item.url}>
-                                        {item.title}
-                                    </a>
-                                </li>
-                            )
+
+                            /*If current Mobile Menu item is GitHub or LinkedIn,
+                            open in new tab */
+                            if (item === MenuItems[3] || item === MenuItems[4]){
+                                return (
+                                    <li key={index}>
+                                        <a 
+                                        className={item.cName} 
+                                        href={item.url}
+                                        target="_blank" 
+                                        rel="noopener noreferrer">
+                                            {item.title}
+                                        </a>
+                                    </li>
+                                )
+                            }
+                            
+                            /* Else, normal hyperlink */
+                            else {
+                                return (
+                                    <li key={index}>
+                                        <a className={item.cName} href={item.url}>
+                                            {item.title}
+                                        </a>
+                                    </li>
+                                )
+                            }
                         })}
 
                         
                     </ul>
+
+                    {/* Open external websites in new tab, landscape mode */}
                     <span className="navButtons">
-                        <Button className="navButtons">GitHub</Button>
+                        <a 
+                        href="https://github.com/dbinlee3"
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                            <Button className="navButtons">GitHub</Button>
+                        </a>
                     </span>
 
                     <span className="navButtons">
-                        <Button classNAme="navButtons">LinkedIn</Button>
+                        <a 
+                        href="https://www.linkedin.com/in/dong-bin-lee-065666235/"
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                            <Button classNAme="navButtons">LinkedIn</Button>
+                        </a>
                     </span>
                     
-
-
-
-
                 </nav>
             </>
         )
