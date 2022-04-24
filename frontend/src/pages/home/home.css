@@ -14,6 +14,7 @@ video {
     align-items: center;
     object-fit: contain; 
     justify-content: center;
+    position: fixed;
 }
 
 .homeContainer > h1 {
