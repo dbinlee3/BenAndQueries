@@ -3,6 +3,7 @@ import './home.css'
 import { Link } from 'react-router-dom';
 
 
+
 // import Typewriter from 'react-simple-typewriter'
 // import '../../react-simple-typewriter/dist/index.css'
 
@@ -30,6 +31,7 @@ function Home() {
                 {/* <Button>GET STARTED</Button> */}
 
             </div>
+            
         </>
     )
 }
