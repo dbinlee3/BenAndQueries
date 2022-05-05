@@ -6,8 +6,22 @@ import profilePic from '../../assets/profilephoto.jpeg'
 function About() {
     return (
         <div className="aboutContainer">
-            <h1>about me.</h1>
-            <img className="profilePic" src={profilePic} alt="" />
+
+            <div className="profileBox">
+                <div className="boxTextTop">
+                    <h2>nice to meet you.</h2>
+                    <h2>my name's Ben.</h2>
+                </div>
+                
+                <img className="profilePic" src={profilePic} alt="" />
+
+                <div className="boxTextBottom">
+                    <h2>here's some info</h2>
+                    <h2>about me.</h2>
+                </div>
+            </div>
+
+
 
             <p>
                 First of all, thank you for visiting my website! 
