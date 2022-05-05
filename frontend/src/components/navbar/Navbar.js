@@ -71,7 +71,7 @@ class Navbar extends Component {
                         href="https://www.linkedin.com/in/dong-bin-lee-065666235/"
                         target="_blank" 
                         rel="noopener noreferrer">
-                            <Button classNAme="navButtons">LinkedIn</Button>
+                            <Button className="navButtons">LinkedIn</Button>
                         </a>
                     </span>
                     

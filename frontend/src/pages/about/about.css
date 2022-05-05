@@ -1,49 +1,157 @@
-
 .aboutContainer {
     background: rgb(25, 31, 36);
     width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    /* position: absolute; add this after making a footer*/
     display: flex;
     flex-direction: column;
     align-items: center;
     object-fit: contain; 
-    /* justify-content: center; */
+    padding: 10%;
 }
 
-.aboutContainer > h1 {
-    margin-top: 100px;
+.profileBox {
+    padding: 30px 0 40px;
+    margin-bottom: 30px;
+    background-color: rgb(20, 26, 31);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    width: 380px;
+    height: 580px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 18px -8px rgba(82, 82, 82, 0.719);
+    box-shadow: 0px 0px 18px -8px rgba(82, 82, 82, 0.719);
+}
+
+.profileBox .profilePicture {
+    top: 30px;
+    display: inline-block;
+    height: 230px;
+    width: 230px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.profileBox .profilePicture::before {
+    content: "";
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background-color: #6568F4;
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    opacity: 0.9;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+
+}
+
+.profileBox:hover .profilePicture::before {
+    height: 100%;
+}
+
+.profileBox .profilePicture::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #6568F4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.profileBox .profilePicture img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+}
+
+.profileBox:hover .profilePicture img {
+    box-shadow: 0 0 0 5px #f7f5ec;
+    transform: scale(0.9);
+}
+
+.profileBox .name {
+    display: block;
+    font-size: 40px;
     color: white;
-    font-size: 60px;
+    text-transform: capitalize;
+    padding: 10px;
 }
 
-.profilePic {
-    margin-top: 30px;
-    border-radius: 47%;
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border: 5px;
+.profileBox .title {
+    display: block;
+    font-size: 28px;
+    color: #a5a9ad;
+    text-transform: capitalize;
 }
 
-.aboutContainer > p {
-    /* padding: 100px; */
-    margin-left: 5%;
-    margin-right: 5%;
+.profileBox .socials {
+    width: 100%;
+    height: 55px;
+    padding: 0;
+    margin: 0;
+    background-color: #6568F4;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.profileBox:hover .socials {
+    bottom: 0;
+}
+
+.profileBox .socials li {
+    display: inline-block;
+}
+
+.profileBox .socials li a {
+    display: block;
+    padding: 10px;
+    font-size: 40px;
+    color: white;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+
+.profileBox .socials li a:hover {
+    color: #6568F4;
+    background-color: #f7f5ec;
+}
+
+.bioBox {
+    background-color: rgb(20, 26, 31);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 18px -8px rgba(82, 82, 82, 0.719);
+    box-shadow: 0px 0px 18px -8px rgba(82, 82, 82, 0.719);
+}
+
+.bioBox > p {
+    margin-left: 7%;
+    margin-right: 7%;
     margin-top: 80px;
+    margin-bottom: 80px;
     color: white;
     font-size: 38px;
 }
 
 @media screen and (max-width: 800px) {
-    .aboutContainer > p {
-        font-size: 23px;
+
+    .bioBox > p {
+        font-size: 24px;
         margin-left: 8%;
         margin-right: 8%;
-        /* padding: 45px; */
         margin-top: 50px;
     }
-
 }
