@@ -5,38 +5,21 @@ function Footer() {
     return (
         <>
             <div className="footerContainer">
-                <section className="footerSubscription">
-                    <p className="footerSubscriptionHeading">
-                        This is the footer
-                    </p>
-                </section>
 
-                <div className="footerLinks">
-                    <div className="footerLinkWrapper">
+                <a className="footerLogo" href=".">ben {"&"} queries.</a>
 
-                        <div className="footerLinkItems">
-                            <h2>ben {"&"} queries.</h2>
+                <div className="footerCenter">
 
-                        </div>
+                    <h2 className="contact">Contact</h2>
+                    <a href="gmail.com" className="email">dbinlee.3@gmail.com</a>
 
-                        <div className="footerLinkItems">
-                            <h2>Contact</h2>
-                            <div className="footerEmail">dbinlee.3@gmail.com</div>
-                            
-                        </div>
+                    <p className="credits">Background video sourced from Pressmaster</p>
 
-                    </div>
                 </div>
 
-                <section className="socialMedia">
-                    <div className="socialMediaWrap">
-                        <div className="footerLogo">
-                            
-                        </div>
-                    </div>
-                </section>
+                <div className="footerIcons">
 
-
+                </div>
 
             </div>
         </>
