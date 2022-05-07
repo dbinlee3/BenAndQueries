@@ -22,7 +22,7 @@ function App() {
           <Route path="/resume" element={<Resume />} />
         </Routes>
 
-        <Footer />
+        {/* <Footer /> */}
         
       </Router>
     </>

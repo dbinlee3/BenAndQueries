@@ -1,0 +1,180 @@
+.projectsContainer {
+    background: rgb(25, 31, 36);
+    width: 100%;
+    height: 200vh;
+    object-fit: cover;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: contain; 
+}
+
+.projectsFlow {
+    height: 100%;
+    width: 900px;
+    /* background-color: rgb(80, 80, 80); */
+}
+
+.projectsFlow > h1 {
+    color: white;
+    text-decoration: underline;
+    font-weight: 10;
+    font-size: 60px;
+    margin-top: 90px;
+
+}
+
+.entryBox {
+    width: 100%;
+    height: 450px;
+    background-color: rgb(39, 45, 50);
+    color: white;
+    margin-top: 50px;
+    padding: 15px; /* Centers height-wise */
+    border-radius: 13px;
+}
+
+.entryContent {
+    width: 95%;
+    height: 100%;
+    margin: auto; /* Centers width-wise */
+    display: grid;
+    grid-template-columns: 15fr 16fr;
+}
+
+.entryTitle {
+    margin-top: 10px;
+}
+
+
+
+.entryTitle {
+    display: inline;
+    font-size: 43px;
+    font-weight: 10;
+    
+}
+
+.entryTitle > a {
+    color: white;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 400ms;
+}
+
+.cplusplus {
+    display: inline;
+    font-size: 28px;
+    font-weight: 10;
+    text-decoration: none;
+    color: white;
+    transition-property: all;
+    transition-duration: 400ms;
+}
+
+.entryTitle > a:hover {
+    color: #6568F4;
+    transition: all 0.2s ease-out;
+}
+
+.entryTitle > p {
+    display: inline;
+    font-size: 20px;
+    color: #6568F4;
+}
+
+.projectImg {
+    width: 100%;
+    border-radius: 9px;
+    position: relative;
+    top: 10px;
+    transition-property: all;
+    transition-duration: 530ms;
+}
+
+.projectImg:hover {
+    opacity: 0.3;
+    transition: all 0.3s ease-out;
+}
+
+.description {
+    padding: 30px;
+    margin-top: 3px;
+}
+
+.chefmedia {
+    font-size: 24px;
+    
+}
+
+.cplusplusDesc {
+    padding: 0;
+    margin-left: 29px;
+    margin-top: 50px;
+    font-size: 24px;
+}
+
+.benqueryDesc {
+    margin-top: 0px;
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 960px) {
+
+    .projectsContainer {
+        height: 330vh;
+    }
+
+    .projectsFlow {
+        width: 440px;
+    }
+
+    .entryBox {
+        height: 780px;
+        
+    }
+
+    .entryContent {
+        margin: auto; /* Centers width-wise */
+        display: table-row;
+    }
+
+    .entryTitle {
+        text-align: center;
+        margin-top: 8px;
+    }
+
+    .projectImg {
+        margin-top: 10px;
+        width: 95%;
+    }
+
+    .description {
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    .benqueryBox {
+        height: 835px;
+    }
+
+    .benqueryDesc {
+        margin-top: 10px;
+        margin-left: 0px;
+        font-size: 24px;
+    }
+
+    .cplusplusDesc {
+        padding: 18px;
+        margin-left: 0px;
+        margin-top: 12px;
+        font-size: 24px;
+    }
+
+}
+
+
+

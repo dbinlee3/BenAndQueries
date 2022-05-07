@@ -1,0 +1,3 @@
+const BENANDQUERIES = "Another achievement of mine is this website that you're currently on! I've created this website not only as personal introduction for myself, but as another way to display my skills as a web developer. With a high understanding of CSS and React.js, I was able to create a fully functional and portable website that serves both desktop and mobile devices. But most of all, it was out of pure enjoyment and an avenue where I could experiment and express my creativity."
+
+export default BENANDQUERIES;

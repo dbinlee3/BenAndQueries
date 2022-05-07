@@ -1,0 +1,3 @@
+const CHEFMEDIA = "Chefmedia is a culinary themed social media app in which users are able to post and interact with recipes. This is a full stack application utilizing the MERN stack which is an industry standard. I am currently leading a team of 5 individuals as the project lead and as the front-end lead. Development started in March 2022 and is expected to launch in June 2022.";
+
+export default CHEFMEDIA;
