@@ -1,0 +1,132 @@
+.resumeContainer {
+    background: rgb(25, 31, 36);
+    width: 100%;
+    height: 200vh;
+    object-fit: cover;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: contain; 
+}
+
+.resumeFlow {
+    height: 100%;
+    width: 900px;
+    margin-top: 90px;
+    /* background-color: rgb(80, 80, 80); */
+}
+
+.sectionLogo {
+    color: white;
+    font-weight: 10;
+    font-size: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.sectionLogo:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid rgb(154, 154, 154);
+    margin: auto;
+}
+
+.resumeSection {
+    /* background-color: rgb( 60, 60, 60); */
+    width: 95%;
+    height: 145px;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 4fr 0.5fr 6fr;
+    transition-property: all;
+    transition-duration: 400ms;
+    border-radius: 7px;
+}
+
+.resumeSection:hover {
+    background-color: rgb( 40, 40, 40);
+    
+}
+
+.skillsHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 36px;
+    font-weight: 10;
+}
+
+.vertLine {
+    margin-top: 20px;
+    border-left: 1px solid white;
+    height: 70%;
+}
+
+.skillsList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+}
+
+.skillsItem {
+    display: table-row;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    
+}
+
+.javalogo {
+    width: 75px;
+    height: 75px;
+}
+
+.logoDescription {
+    color: white;
+    font-size: 18px;
+}
+
+.techList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+}
+
+.techItem {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.techDescription {
+    color: white;
+    font-size: 28px;
+}
+
+@media screen and (max-width: 960px) {
+
+    .resumeFlow {
+        width: 440px;
+    }
+
+    .resumeSection {
+        width: 100%;
+        height: 250px;
+        position: relative;
+        top: 50px;
+        display: table-row;
+        grid-template-rows: 4fr 0.5fr 6fr;
+        border-radius: 7px;
+    }
+
+    .resumeSection:hover {
+        background: none;
+        
+    }
+
+    .logoDescription {}
+
+}
