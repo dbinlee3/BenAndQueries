@@ -5,100 +5,67 @@ import java from '../../assets/resume_assets/javalogo1.png'
 
 function Resume() {
 
-    //useState for text description
-    const [sectionA, setSectionA] = useState(false);
-    const [sectionB, setSectionB] = useState(false);
 
     return (
         <>
             <div className="resumeContainer">
                 <div className="resumeFlow">
-                    <h2 className="sectionLogo">Skills</h2>
+                    <h2 className="sectionLogo A">Skills</h2>
 
 
-                    <section className="resumeSection"
-                        onMouseEnter={e => {
-                            setSectionA(true)
-                        }}
-                        onMouseLeave={e => {
-                            setSectionA(false)
-                        }}
-                    >
+                    <section className="resumeSection skills">
                         <h3 className="skillsHeader">Programming</h3>
                         <div className="vertLine"/>
                         <ul className="skillsList">
 
                             <li className="skillsItem">
                                 <img className="javalogo" src={java} alt=""/>
-                                <p className="logoDescription pc"
-                                    style={ sectionA ? { display: 'block' } : { display: 'none' }}
-                                >Java</p>
+                                <p className="logoDescription pc">Java</p>
                             </li>
 
                             <li className="skillsItem">
                                 <img className="javalogo" src={java} alt=""/>
-                                    <p className="logoDescription"
-                                        style={ sectionA ? { display: 'block' } : { display: 'none'}}
-                                    >Javascript</p>
+                                    <p className="logoDescription">Javascript</p>
                             </li>
 
                             <li className="skillsItem">
                                 <img className="javalogo" src={java} alt=""/>
-                                    <p className="logoDescription"
-                                        style={ sectionA ? { display: 'block' } : { display: 'none'}}
-                                    >C</p>
+                                    <p className="logoDescription" >C</p>
                             </li>
 
                             <li className="skillsItem">
                                 <img className="javalogo" src={java} alt=""/>
-                                    <p className="logoDescription"
-                                        style={ sectionA ? { display: 'block' } : { display: 'none'}}
-                                    >C++</p>
+                                    <p className="logoDescription" >C++</p>
                             </li>
                         </ul>
 
                     </section>
 
-                    <section className="resumeSection"
-                        onMouseEnter={e => {
-                            setSectionB(true)
-                        }}
-                        onMouseLeave={e => {
-                            setSectionB(false)
-                        }}
-                    >
+                    <section className="resumeSection skills">
                         <h3 className="skillsHeader">Web Development</h3>
                         <div className="vertLine"/>
                         <ul className="skillsList">
 
                             <li className="skillsItem">
                                 <img className="javalogo" src={java} alt=""/>
-                                <p className="logoDescription"
-                                    style={ sectionB ? { display: 'block' } : { display: 'none' }}
-                                >HTML</p>
+                                <p className="logoDescription" >HTML</p>
                             </li>
                             <li className="skillsItem">
                                 <img className="javalogo" src={java} alt=""/>
-                                <p className="logoDescription"
-                                    style={ sectionB ? { display: 'block' } : { display: 'none' }}
-                                >CSS</p>
+                                <p className="logoDescription">CSS</p>
                             </li>
                             <li className="skillsItem">
                                 <img className="javalogo" src={java} alt=""/>
-                                <p className="logoDescription"
-                                    style={ sectionB ? { display: 'block' } : { display: 'none' }}
-                                >React.js</p>
+                                <p className="logoDescription" >React.js</p>
                             </li>
                             <li className="skillsItem">
                                 <img className="javalogo" src={java} alt=""/>
-                                <p className="logoDescription"
-                                    style={ sectionB ? { display: 'block' } : { display: 'none' }}
-                                >Tailwind CSS</p>
+                                <p className="logoDescription" >Tailwind CSS</p>
                             </li>
                         </ul>
                     </section>
 
-                    <section className="resumeSection">
+                    <section className="resumeSection skills">
                         <h3 className="skillsHeader">Tech</h3>
                         <div className="vertLine"/>
                         <ul className="techList">
@@ -123,7 +90,49 @@ function Resume() {
                             </li>
                         </ul>
                     </section>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
 
+                    <h2 className="sectionLogo B">Education</h2>
+                    <section className="educationSection">
+                        <div className="educationBlock">
+                            <div className="blockContent">
+                                <h3 className="educationHeader">
+                                    Cognitive Science<br/>
+                                    Design {"&"} Interaction
+                                </h3>
+                                <p className="educationDescription">Bachelor's of Science</p>
+
+                                <h4 className="educationSchool major">
+                                    University of California<br />
+                                    San Diego
+                                </h4>
+
+                                <p className="educationDescription">Expected June 2023</p>
+                            </div>
+                        </div>
+
+                        <div className="educationBlock">
+                            <div className="blockContent">
+                                <h3 className="educationHeader">
+                                    Computer Science
+                                </h3>
+                                <p className="educationDescription">Minor</p>
+
+                                <h4 className="educationSchool minor">
+                                    University of California<br />
+                                    San Diego
+                                </h4>
+
+                                <p className="educationDescription">Expected June 2023</p>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </>
