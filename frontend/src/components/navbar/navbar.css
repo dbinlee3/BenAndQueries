@@ -30,6 +30,10 @@
     margin-right: 2rem;
 }
 
+.routerLink {
+    text-decoration: none;
+}
+
 .nav-links {
     color: white;
     text-decoration: none;

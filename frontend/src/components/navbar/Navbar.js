@@ -44,10 +44,18 @@ class Navbar extends Component {
                             /* Else, normal hyperlink */
                             else {
                                 return (
+                                    // <li key={index}>
+                                    //     <a className={item.cName} href={item.url}>
+                                    //         {item.title}
+                                    //     </a>
+                                    // </li>
+
                                     <li key={index}>
-                                        <a className={item.cName} href={item.url}>
-                                            {item.title}
-                                        </a>
+                                        <Link className="routerLink" to={item.url}>
+                                            <div className={item.cName}>
+                                                {item.title}
+                                            </div>
+                                        </Link>
                                     </li>
                                 )
                             }
