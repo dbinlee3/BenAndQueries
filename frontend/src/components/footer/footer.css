@@ -4,7 +4,6 @@
     display: flex;
     font-size: 1.2rem;
     justify-content: center;
-    /* align-items: center; */
     text-align: center;
 }
 
@@ -12,10 +11,8 @@
     position: absolute;
     left: 35px;
     margin-top: 70px;
-    
     color: white;
     cursor: pointer;
-    /* margin-left: 20px; */
     font-size: 27px;
     font-weight: bold;
     text-decoration: none;
@@ -41,4 +38,12 @@
 .credits {
     position: relative;
     top: 125px;
+}
+
+@media screen and (max-width: 960px) {
+
+    .footerLogo {
+        display: none;
+    }
+
 }

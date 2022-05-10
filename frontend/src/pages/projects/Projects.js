@@ -6,6 +6,7 @@ import CHEFMEDIA from './descriptions/chefmedia.js'
 import benandqueries from '../../assets/benandqueries.png'
 import BENANDQUERIES from './descriptions/benandqueries.js'
 
+import cplusplus from '../../assets/compressor.png'
 import CPLUSPLUS from './descriptions/cplusplus.js'
 
 function Projects() {
@@ -20,7 +21,7 @@ function Projects() {
         <>
             <div className="projectsContainer">
                 <div className="projectsFlow">
-                    <h1 className="projectsLogo">projects</h1>
+                    <h1 className="projectsLogo">Projects</h1>
 
                     {/* CHEFMEDIA */}
                     <section className="entryBox">
@@ -67,7 +68,7 @@ function Projects() {
                                 </a>
                                 <div className="imageBox">
                                     <a
-                                        href={chefLink}
+                                        href={benLink}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
@@ -99,7 +100,7 @@ function Projects() {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        <img src={benandqueries} alt="" className="projectImg" />
+                                        <img src={cplusplus} alt="" className="projectImg" />
                                     </a>
                                 </div>
                                 
