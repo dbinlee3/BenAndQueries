@@ -1,7 +1,7 @@
 .resumeContainer {
     background: rgb(25, 31, 36);
     width: 100%;
-    height: 200vh;
+    height: 270vh;
     object-fit: cover;
     z-index: -1;
     display: flex;
@@ -23,6 +23,15 @@
     font-size: 60px;
     display: flex;
     flex-direction: row;
+    margin-top: 40px;
+}
+
+.B {
+    margin-top: 170px;
+}
+
+.C {
+    margin-top: 170px;
 }
 
 .A:after {
@@ -33,6 +42,13 @@
 }
 
 .B:before {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid rgb(154, 154, 154);
+    margin: auto;
+}
+
+.C:after {
     content: "";
     flex: 1 1;
     border-bottom: 1px solid rgb(154, 154, 154);
@@ -63,6 +79,7 @@
 
 .resumeSection:hover {
     background-color: rgb(38, 40, 48);
+    margin-left: 20px;
     
 }
 
@@ -95,8 +112,38 @@
     
 }
 
-.javalogo {
-    width: 75px;
+.javaLogo {
+    width: 58px;
+    height: 75px;
+}
+
+.javascriptLogo {
+    margin-top: 5px;
+    width: 68px;
+    height: 68px;
+}
+
+.javascriptDesc {
+    margin-top: 3px;
+}
+
+.cplusplusLogo {
+    width: 69px;
+    height: 75px;
+}
+
+.reactLogo {
+    margin-top: 10px;
+    width: 73px;
+    height: 63px;
+}
+
+.reactDesc {
+    margin-top: 3px;
+}
+
+.tailwindLogo {
+    width: 68px;
     height: 75px;
 }
 
@@ -123,6 +170,10 @@
     font-size: 28px;
 }
 
+.educationLink {
+    text-decoration: none;
+}
+
 .educationSection {
     margin-top: 60px;
     display: grid;
@@ -130,12 +181,19 @@
     grid-gap: 50px;
 }
 
-
 .educationBlock {
     background-color: rgb(38, 40, 48);
     border-radius: 10px;
     height: 300px;
     text-align: center;
+    position: relative;
+    top: 10px;
+    transition: all 0.25s ease-out;
+}
+
+.educationBlock:hover {
+    border-radius: 2rem;
+    top: -20px;
 }
 
 .blockContent {
@@ -146,6 +204,8 @@
     color: white;
     font-size: 35px;
     font-weight: 100;
+    transition-property: all;
+    transition-duration: 400ms;
 }
 
 .educationDescription {
@@ -169,8 +229,91 @@
     margin-top: 85px;
 }
 
+.workSection {
+    margin-top: 80px;
+}
+
+.workContent {
+    margin-left: 20px;
+    /* background-color: rgb(46, 46, 46); */
+    width: 90%;
+    height: 500px;
+}
+
+.workHeader {
+    font-size: 36px;
+    font-weight: 10;
+    padding: 5px;
+}
+
+.title {
+    color: white;
+}
+
+.murphy {
+    color: #6568F4;
+    transition: all 0.25s ease-out;
+    text-decoration: none;
+}
+
+.murphy:hover {
+    color: rgb(50, 53, 212);
+    margin-left: 10px;
+}
+
+.murphyDate  {
+    margin-top: 3px;
+    margin-left: 20px;
+    font-size: 20px;
+    color: rgb(126, 126, 126);
+}
+
+.listBox {
+    background-color: rgb(38, 40, 48);
+    border-radius: 10px;
+    width: 63%;
+    height: 360px;
+    margin-left: 10%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listContent {
+    /* background-color: rgb(91, 91, 91); */
+    width: 90%;
+    height: 85%;
+}
+
+.murphyListItem {
+    display: grid;
+    grid-template-columns: 45px 10fr;
+    padding: 10px;
+    /* color: rgb(93, 158, 236); */
+}
+
+.fa-angle-double-right {
+    margin-top: 23px;
+    color: #6568F4;
+}
+
+.murphyDescription {
+    position: relative;
+    font-size: 22px;
+    color: white;
+    list-style: none;
+}
+
+
+
+
 
 @media screen and (max-width: 960px) {
+
+    .resumeContainer {
+        height: 340vh;
+    }
 
     .resumeFlow {
         width: 440px;
@@ -191,6 +334,20 @@
         
     }
 
-    .logoDescription {}
+    .educationSection {
+        display: table-row;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .educationBlock{
+        margin-top: 30px;
+    }
+   
+
+    .listBox {
+        width: 440px;
+        height: 400px;
+        margin-left: -20px;
+    }
 
 }
