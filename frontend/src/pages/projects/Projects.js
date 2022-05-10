@@ -20,7 +20,7 @@ function Projects() {
         <>
             <div className="projectsContainer">
                 <div className="projectsFlow">
-                    <h1 className="projectsLogo">projects</h1>
+                    <h1 className="projectsLogo">Projects</h1>
 
                     {/* CHEFMEDIA */}
                     <section className="entryBox">

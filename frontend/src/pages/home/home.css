@@ -3,7 +3,7 @@ video {
     height: 100vh;
     object-fit: cover;
     z-index: -1;
-    position: fixed;
+    position: absolute;
 }
 
 .homeContainer {
@@ -14,7 +14,7 @@ video {
     align-items: center;
     object-fit: contain; 
     justify-content: center;
-    position: fixed;
+    position: relative;
 
 }
 
@@ -54,4 +54,18 @@ video {
 
 .getStartedButton:focus {
     transform: scale(0.90);
+}
+
+@media screen and (max-width: 960px) {
+
+    .homeContainer > h1 {
+        color: white;
+        font-size: 70px;
+        margin-top: -100px;
+    }
+
+    .homeContainer > p {
+        font-size: 28px; 
+    }
+
 }
