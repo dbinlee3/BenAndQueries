@@ -22,12 +22,32 @@ video {
     color: white;
     font-size: 100px;
     margin-top: -100px;
+    animation: fadein 3s
+}
+
+@keyframes fadein {
+    0% {
+    opacity:0;
+    }
+    100% {
+    opacity:1;
+    }
 }
 
 .homeContainer > p {
     margin-top: 8px;
     color: white;
     font-size: 32px; 
+    animation: fadein 6s
+}
+
+@keyframes fadein {
+    0% {
+    opacity:0;
+    }
+    100% {
+    opacity:1;
+    }
 }
 
 .getStartedButton {

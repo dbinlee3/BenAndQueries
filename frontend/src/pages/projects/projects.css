@@ -24,6 +24,16 @@
     margin-top: 130px;
     display: flex;
     flex-direction: row;
+    animation: fadein 1.5s
+}
+
+@keyframes fadein {
+    0% {
+    opacity:0;
+    }
+    100% {
+    opacity:1;
+    }
 }
 
 .projectsFlow > h1:after {
@@ -41,6 +51,16 @@
     margin-top: 50px;
     padding: 15px; /* Centers height-wise */
     border-radius: 13px;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-8%);
+    }
+    100% {
+      transform: translateX(0);
+    }
 }
 
 .entryContent {
