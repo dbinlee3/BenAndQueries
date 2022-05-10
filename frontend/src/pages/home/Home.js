@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom';
 // import '../../react-simple-typewriter/dist/index.css'
 
 import video1 from '../../assets/techvid1.mp4'
-import video2 from '../../assets/techvid2.mp4'
 
 
 

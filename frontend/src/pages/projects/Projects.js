@@ -15,8 +15,6 @@ function Projects() {
     const benLink = "https://github.com/dbinlee3/BenAndQueries";
     const cplusplusLink = "https://github.com/dbinlee3/File-Compressor-Decompressor";
 
-
-
     return (
         <>
             <div className="projectsContainer">
