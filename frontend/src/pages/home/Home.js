@@ -16,7 +16,7 @@ function Home() {
         <>
             <div className="homeContainer">
 
-                <video src={video1} autoPlay loop muted />
+                <video src={video1} muted />
                 <h1>greetings.</h1>
                 <p>welcome to ben {"&"} queries.</p>
 

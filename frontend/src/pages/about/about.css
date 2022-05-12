@@ -246,6 +246,19 @@
     font-size: 18px;
 }
 
+.paragraphLink {
+    font-size: 18px;
+    color: #6568F4;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 400ms;
+}
+
+.paragraphLink:hover {
+    color: rgb(255, 255, 255);
+    transition: all 0.2s ease-out;
+}
+
 /* .aboutList {
     width: 100%;
 } */

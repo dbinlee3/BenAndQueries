@@ -167,7 +167,7 @@ function About() {
                                             top: '0px', transition: 'all 0.2s ease-out', color: 'rgb(93, 158, 236)'} : 
                                             {top: '5px', transition: 'all 0.2s ease-out'}
                                         }
-                                    >Thanks again for stopping by. If you're interested in my work, or would like to get in touch, feel free to navigate through the website!</p>
+                                    >Thanks again for stopping by. If you're interested in my work, or would like to get in touch, feel free to <a href="mailto:dbinlee.3@gmail.com" target="_blank" rel="noopener noreferrer" className="paragraphLink">email me</a> or connect with me on <a href="https://www.linkedin.com/in/dong-bin-lee-065666235/" target="_blank" rel="noopener noreferrer" className="paragraphLink">LinkedIn!</a></p>
                                     
                                 </li>
                             </ul>
