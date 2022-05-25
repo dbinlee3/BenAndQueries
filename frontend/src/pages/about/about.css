@@ -1,7 +1,13 @@
+body {
+    margin: 0px;
+    height: 100vh;
+    background-color: rgb(25, 31, 36);
+}
+
 .aboutContainer {
     background: rgb(25, 31, 36);
     width: 100%;
-    height: 133vh;
+    height: auto;
     object-fit: cover;
     z-index: -1;
     display: flex;
@@ -160,7 +166,7 @@
     color: white;
     font-weight: 100;
     font-size: 40px;
-    animation: fadein 3s
+    animation: fadein 3s;
 }
 
 @keyframes fadein {
@@ -271,28 +277,40 @@
     }
 
     .aboutFlow {
-        width: 440px;
+        width: 70%;
     }
 
     .aboutTitle {
-        margin-left: 0;
+        margin-left: 0px;
+        font-size: 49px;
     }
 
     .aboutGrid {
-
-        /* margin-top: 80px; */
         display: table-row-group;
-        grid-gap: 63px;
     }
 
     .profileBox {
-        margin-top: 60px;
-        margin-left: 26px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        width: 350px;
+        height: 630px;
     }
 
     .listBox2 {
-        width: 430px;
-        height: 680px;
+        margin-top: 20px;
+        width: 350px;
+        height: auto;
+        padding: 10px;
+    }
+
+    .listContent {
+        margin-bottom: 0px;
+        width: 100%;
+    }
+
+    .listParagraph {
+        grid-template-columns: 45px 10fr;
+        padding: 8px;
     }
 
 }

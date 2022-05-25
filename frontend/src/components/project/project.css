@@ -1,0 +1,110 @@
+body {
+    height: 450px;
+}
+
+.entryBox {
+    width: 100%;
+    height: auto;
+    background-color: rgb(39, 45, 50);
+    color: white;
+    margin-top: 50px;
+    padding: 15px; /* Centers height-wise */
+    border-radius: 13px;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-8%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+.entryContent {
+    width: 95%;
+    height: 100%;
+    margin: auto; /* Centers width-wise */
+    display: grid;
+    grid-template-columns: 15fr 16fr;
+}
+
+.entryTitle {
+    margin-top: 10px;
+    
+}
+
+
+
+.entryTitle {
+    font-size: 43px;
+    font-weight: 10;
+    
+}
+
+.entryTitle > a {
+    color: white;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 400ms;
+}
+
+.entryTitle > a:hover {
+    color: #6568F4;
+    transition: all 0.2s ease-out;
+}
+
+.entryTitle > p {
+    display: inline;
+    font-size: 20px;
+    color: #6568F4;
+}
+
+.projectImg {
+    width: 100%;
+    border-radius: 9px;
+    position: relative;
+    top: 10px;
+    transition-property: all;
+    transition-duration: 530ms;
+}
+
+.projectImg:hover {
+    opacity: 0.3;
+    transition: all 0.3s ease-out;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    font-size: 24px
+}
+
+@media screen and (max-width: 960px) {
+
+    .entryContent {
+        margin: auto; /* Centers width-wise */
+        display: table-row;
+    }
+
+    .entryTitle {
+        text-align: center;
+        margin-top: 8px;
+    }
+
+    .entryTitle > p {
+        display: flex;
+    }
+
+    .projectImg {
+        margin-top: 10px;
+        width: 95%;
+    }
+
+    .description {
+        padding: 10px;
+        margin-top: 20px;
+        font-size: 22px;
+    }
+}
