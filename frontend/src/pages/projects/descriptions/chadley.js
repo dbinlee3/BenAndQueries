@@ -1,0 +1,3 @@
+const chadleyDesc = "This project utilizes OpenAI’s GTP-3 API which generates a powerful AI generated response. This application allows users to enter a prompt to receive that response. Each prompt and response pair is shown as a list from newest to oldest, and is saved in a local storage. The user has the option to clear the current list as well. This project was built on the React framework.";
+
+export default chadleyDesc;
